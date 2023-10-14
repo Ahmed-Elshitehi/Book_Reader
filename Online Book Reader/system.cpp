@@ -22,13 +22,13 @@ bool system::sign_up(int type) {
     string last_name;
     string user_name;
     string password;
-    cout << "Inter First name : ";
+    cout << "enter First name : ";
     cin >> first_name;
-    cout << "Inter Last name : ";
+    cout << "enter Last name : ";
     cin >> last_name;
-    cout << "Inter User name : ";
+    cout << "enter User name : ";
     cin >> user_name;
-    cout << "Inter Password : ";
+    cout << "enter Password : ";
     cin >> password;
     if (type == 1) {
         admin temp(user_name, password, first_name, last_name);
@@ -59,9 +59,9 @@ bool system::log_in(int type) {
     }
     string user_name;
     string password;
-    cout << "Inter User name : ";
+    cout << "enter User name : ";
     cin >> user_name;
-    cout << "Inter Password : ";
+    cout << "enter Password : ";
     cin >> password;
     if (type == 1) {
         if (admins[user_name].get_password() != password) {
@@ -94,14 +94,14 @@ void system::user_menu(user &User) {
                 cout << '\t' << item.first << '\n';
             }
             string title;
-            cout << "inter your chose Book (NO spaces) \n";
+            cout << "enter your chose Book (NO spaces) \n";
             cin >> title;
             User.new_book(title);
         } else if (chose == 2) {
             if (User.print_library(data_base)) {
                 cout << '\n';
                 string title;
-                cout << "inter your chose Book (NO spaces) \n";
+                cout << "enter your chose Book (NO spaces) \n";
                 cin >> title;
                 User.remove_book(title);
             }
