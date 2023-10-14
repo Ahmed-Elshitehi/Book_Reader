@@ -33,7 +33,7 @@ void book::reading(int &page) {
     while (current_page < number_of_pages && current_page >= 0 && !exit) {
         print_page(current_page);
         int ch;
-        cout << "\tinter number in range 1 - 3\n";
+        cout << "\tenter number in range 1 - 3\n";
         cout << "\t1 - Next Page\n";
         cout << "\t2 - Previous Page\n";
         cout << "\t3 - Exit\n";
