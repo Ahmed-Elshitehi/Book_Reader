@@ -1,12 +1,11 @@
 //
+// Created by Ahmed Salah on 9/14/2023.
+//
 
 #include "admin.h"
-
 admin::admin(string &user_name, string &password, string &first_name, string &last_name) :
         user_name(user_name), password(password), first_name(first_name), last_name(last_name) {
 }
-//
-// Created by Ahmed Salah on 9/14/2023.
 admin::admin() {
     user_name = password = first_name = last_name = "";
 }
@@ -15,18 +14,18 @@ bool admin::add_book(map<string, book> &data_base, map<string, bool> &book_av) {
     int number_of_pages;
     string title;
     string author;
-    cout << "inter book title : ";
+    cout << "enter book title : ";
     cin >> title;
-    cout << "inter book author : ";
+    cout << "enter book author : ";
     cin >> author;
-    cout << "inter number of pages : ";
+    cout << "enter number of pages : ";
     cin >> number_of_pages;
     check:
     cout << "check\n";
     book Book(title, number_of_pages, author);
     if (book_av[title]) {
         cout << "We have book with the same tittle \n "
-             << "Do you want to inter new tittle ? (Y/N) : ";
+             << "Do you want to enter new tittle ? (Y/N) : ";
         char ch;
         cin >> ch;
         if (toupper(ch) == 'Y') {
