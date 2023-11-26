@@ -1,4 +1,4 @@
-# Online_Book_Reader
+# Book_Reader Application
 In this project, I'm just trying to implement some OOP concepts using c++. <br>
 <hr>
 - Take a look at the UML <hr>
