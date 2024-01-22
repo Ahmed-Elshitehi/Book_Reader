@@ -11,7 +11,15 @@ private:
     string author;
     vector<string> pages;
 public:
-
+    const string &GetAuthor() const;
+    void SetAuthor(const string &author);
+    const string &GetIsbn() const;
+    void SetIsbn(const string &isbn);
+    const vector<string> &GetPages() const;
+    void SetPages(const vector<string> &pages);
+    const string &GetTitle() const;
+    void SetTitle(const string &title);
+    void ReadInfo();
 };
 
 #endif
