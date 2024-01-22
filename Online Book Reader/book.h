@@ -9,6 +9,7 @@ private:
     string isbn;
     string title;
     string author;
+    int numOfPages;
     vector<string> pages;
 public:
     const string &GetAuthor() const;
@@ -19,6 +20,7 @@ public:
     void SetPages(const vector<string> &pages);
     const string &GetTitle() const;
     void SetTitle(const string &title);
+    const int GetNumOfPages() const;
     void ReadInfo();
 };
 

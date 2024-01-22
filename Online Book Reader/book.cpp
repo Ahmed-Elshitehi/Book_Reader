@@ -48,7 +48,6 @@ void Book::ReadInfo() {
     SetAuthor(string);
 
     cout << "Enter How many pages: ";
-    int numOfPages;
     cin >> numOfPages;
 
     for (int page = 0; page < numOfPages; ++page) {
@@ -56,4 +55,8 @@ void Book::ReadInfo() {
         string += char('0' + page);
         pages.push_back(string);
     }
+}
+
+const int Book::GetNumOfPages() const {
+    return numOfPages;
 }

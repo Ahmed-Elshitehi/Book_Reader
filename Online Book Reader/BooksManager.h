@@ -6,7 +6,7 @@
 #include "book.h"
 class BooksManager {
 private:
-    map<string, book*> isbn_to_book_map;
+    map<string, Book*> isbn_to_book_map;
 
 };
 
