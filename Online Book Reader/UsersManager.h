@@ -4,8 +4,8 @@
 #include <map>
 #include "user.h"
 class UsersManager {
-    user* current_user {nullptr};
-    map<string, user *> userame_userobject_map;
+    User* current_user {nullptr};
+    map<string, User *> userame_userobject_map;
 };
 
 

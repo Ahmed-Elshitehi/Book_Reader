@@ -6,9 +6,11 @@
 #include "book.h"
 class BooksManager {
 private:
-    map<string, Book*> isbn_to_book_map;
-
+    map<string, Book*> library;
+public:
+    BooksManager();
+    void AddBook(Book *);
+    void DeleteBook(string isbn);
+    void ListAvailableBooks();
 };
-
-
 #endif
