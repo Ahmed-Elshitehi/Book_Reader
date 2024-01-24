@@ -4,8 +4,14 @@
 #include <map>
 #include "user.h"
 class UsersManager {
+private:
     User* current_user {nullptr};
-    map<string, User *> userame_userobject_map;
+    map<string, User *> users_list;
+    void FreeData();
+public:
+    void AccessSystem();
+    void Login();
+    void SignUp();
 };
 
 
