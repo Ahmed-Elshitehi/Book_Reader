@@ -8,11 +8,14 @@ private:
     Book *book;
     int currentPage;
 public:
-    ReadingSession();
     ReadingSession(Book *book);
+    ReadingSession();
     void NextPage();
     void PreviousPage();
+    void PrintInfo();
+    const int &GetCurrentPage() const;
 
+    string GetCurrentPageContent();
 };
 
 #endif

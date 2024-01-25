@@ -20,3 +20,14 @@ void ReadingSession::PreviousPage() {
     }
 }
 
+void ReadingSession::PrintInfo() {
+    cout << book->GetTitle() << " Page: " << currentPage + 1 << '\n';
+}
+
+const int &ReadingSession::GetCurrentPage() const {
+    return currentPage;
+}
+
+string ReadingSession::GetCurrentPageContent() {
+    return book->GetPageAt(currentPage);
+}
