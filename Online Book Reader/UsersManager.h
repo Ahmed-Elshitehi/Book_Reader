@@ -12,6 +12,8 @@ public:
     void AccessSystem();
     void Login();
     void SignUp();
+    void LoadDatabase();
+    User *Get_user();
 };
 
 

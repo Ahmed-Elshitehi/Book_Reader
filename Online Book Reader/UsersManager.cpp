@@ -10,8 +10,9 @@ void UsersManager::FreeData() {
 
 void UsersManager::AccessSystem() {
     cout << "\n";
-    cout << "\t1: ";
-         cout << "\nEnter number in range " << "1 - 2"  ": ";
+    cout << "\t1: Login\n";
+    cout << "\t2: SignUP\n";
+    cout << "\nEnter number in range " << "1 - 2: ";
     int choice;
     cin >> choice;
     if (choice == 1)
@@ -58,5 +59,27 @@ void UsersManager::SignUp() {
     current_user->ReadInfo(user_name);
     string t = current_user->GetUserName();
     users_list[current_user->GetUserName()] = current_user;
+}
+
+void UsersManager::LoadDatabase() {
+    User* user1 = new User();
+    user1->SetUser_name("m3rof");
+    user1->SetPassword("111");
+    user1->Set_admin(true);
+    user1->SetFirst_name("Ahmed");
+    user1->SetLast_name("Salah");
+    users_list[user1->GetUserName()] = user1;
+
+    User* user2 = new User();
+    user2->SetUser_name("Omar");
+    user2->SetPassword("222");
+    user2->Set_admin(false);
+    user2->SetFirst_name("OMAR");
+    user2->SetLast_name("Salah");
+    users_list[user2->GetUserName()] = user2;
+}
+
+User *UsersManager::Get_user() {
+    return current_user;
 }
 
