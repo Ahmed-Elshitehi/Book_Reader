@@ -21,6 +21,7 @@ public:
     const string &GetTitle() const;
     void SetTitle(const string &title);
     const int GetNumOfPages() const;
+    const string &GetPageAt(int idx) const;
     void ReadInfo();
 };
 

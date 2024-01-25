@@ -60,3 +60,7 @@ void Book::ReadInfo() {
 const int Book::GetNumOfPages() const {
     return numOfPages;
 }
+
+const string &Book::GetPageAt(int idx) const {
+    return pages[idx];
+}
