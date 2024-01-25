@@ -6,8 +6,11 @@ class System {
 private:
     BooksManager *books_manager;
     UsersManager *users_manager;
+    void LoadDatabase();
 public:
-
+    System();
+    void Run();
+    ~System();
 };
 
 
